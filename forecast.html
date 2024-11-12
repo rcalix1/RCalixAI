@@ -2,6 +2,39 @@
 <head><meta charset="utf-8">
 	<link href="styleT.css" rel="stylesheet" type="text/css" />
 	<title>RCalix AI</title>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+
+<script
+const xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    },{
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    },{
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+</script>
+
 </head>
 <body><!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	<h1><center><a href="https://www.rcalix.com">R. Calix AI</a></center></h1>
@@ -127,6 +160,9 @@
 <h3><a href="" name=""></a></h3>
 
 <p><em></em></p>
+
+<canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+	
 <p>Natural Language Processing, Text-to-Scene processing, Machine learning, Deep Learning, Transfer Learning, GANs, and Reinforecement Learning. So far, I have applied AI to 
 	multimedia analysis, animation, cyber security, industrial plant forecasting, AI auditing, agriculture and genetics, etc. I am always interested in tackling 
 	new challenges. </p>
