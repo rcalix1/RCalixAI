@@ -125,11 +125,11 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 <div class="item">
 <div class="pic">
 	<p>
-	   AI Trends: 
+	   Berkshire Hathaway: 
 	   <br/>
-	   NVidia revenue in Billions. 
+	   Cash held by Berkshire
            <br/>
-           Annual corporate investment in AI (in billions)     
+             
      </p>
 </div>
 <div class="txt">
@@ -189,23 +189,23 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
 <script>
 var xyValues = [
-  {x:2015, y:273},
-  {x:2016, y:570},
-  {x:2017, y:20000},
-  {x:2018, y:3854},
-  {x:2019, y:10324},
-  {x:2020, y:9600},
-  {x:2021, y:20000},
-  {x:2022, y:40000},
-  {x:2023, y:35000},
-  {x:2024, y:88000}
+  {x:2015, y:50},
+  {x:2016, y:60},
+  {x:2017, y:75},
+  {x:2018, y:100},
+  {x:2019, y:100},
+  {x:2020, y:150},
+  {x:2021, y:140},
+  {x:2022, y:130},
+  {x:2023, y:200},
+  {x:2024, y:325}
 ];
 
 new Chart("myChart", {
   type: "scatter",
   data: {
     datasets: [{
-      label: "Bitcoin Price History",
+      label: "Cash held by BH",
       pointRadius: 4,
       pointBackgroundColor: "rgb(0,0,255)",
       data: xyValues,
@@ -216,7 +216,7 @@ new Chart("myChart", {
     legend: {display: true},
     scales: {
       xAxes: [{ticks: {min: 2000, max:2030}}],
-      yAxes: [{ticks: {min: 6, max:95000}}],
+      yAxes: [{ticks: {min: 6, max:350}}],
     }
   }
 });
