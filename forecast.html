@@ -252,32 +252,28 @@ new Chart("myChart1", {
 
 <script>
 const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
-
+          
 new Chart("myChartBerkHath", {
   type: "line",
   data: {
     labels: xValues,
     datasets: 
-    [
-    {
+    [{
       label: "Cash",
       data: [50,60,75,100,100,150,140,130,200,325],
       borderColor: "red",
       fill: false
-    } ,
-   {
+    }, {
       label: "B",
       data: [0,0,0,0,0,0,0,0,0,0],
       borderColor: "green",
       fill: false
-    },
-   {
+    }, {
       label: "C",
       data: [0,0,0,0,0,0,0,0,0,0],
       borderColor: "blue",
       fill: false
-    } 
-    ]
+    }]
   },
   options: {
     legend: {display: true}
