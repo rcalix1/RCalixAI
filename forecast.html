@@ -156,6 +156,21 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </div>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<div class="item">
+<div class="pic">
+	<p>Berkshire Hathaway: Cash in Billions. </p>
+</div>
+<div class="txt">
+<h3><a href="" name=""></a></h3>
+
+<p><em></em></p>
+
+      <canvas id="myChartBerkHath" style="width:100%;max-width:700px"></canvas>
+	
+<h3><a href="" name=""></a></h3>
+</div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 
@@ -194,6 +209,8 @@ new Chart("myChart", {
 });
 </script>
 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <script>
 const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
 
@@ -217,6 +234,44 @@ new Chart("myChart1", {
       borderColor: "blue",
       fill: false
     }]
+  },
+  options: {
+    legend: {display: true}
+  }
+});
+
+</script>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<script>
+const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+
+new Chart("myChartBerkHath", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: 
+    [
+    {
+      label: "Cash",
+      data: [50,60,75,100,100,150,140,130,200,325],
+      borderColor: "red",
+      fill: false
+    } /*,
+   {
+      label: "B",
+      data: [12,11,12,10,13,9,9,10,10,10],
+      borderColor: "green",
+      fill: false
+    },
+   {
+      label: "C",
+      data: [10,9,12,10,10,11,10,10,12,10],
+      borderColor: "blue",
+      fill: false
+    } */
+    ]
   },
   options: {
     legend: {display: true}
