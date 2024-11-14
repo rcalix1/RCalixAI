@@ -183,6 +183,52 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+<div class="item">
+<div class="pic">
+	
+	<p>
+	   Commonity prices: 
+	   <br/>
+	   Platinum
+           <br/>
+	 gold
+             
+        </p>
+</div>
+<div class="txt">
+<h3><a href="" name=""></a></h3>
+
+<p><em></em></p>
+
+      <canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
+	
+<h3><a href="" name=""></a></h3>
+</div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<div class="item">
+<div class="pic">
+	
+	<p>
+	   AI Trends: 
+	   <br/>
+	   NVidia revenue in Billions. 
+           <br/>
+           Annual corporate investment in AI (in billions)     
+        </p>
+</div>
+<div class="txt">
+<h3><a href="" name=""></a></h3>
+
+<p><em></em></p>
+
+      <canvas id="myChart4" style="width:100%;max-width:700px"></canvas>
+	
+<h3><a href="" name=""></a></h3>
+</div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -295,6 +341,41 @@ new Chart("myChart2", {
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<script>
+const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+
+new Chart("myChart3", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "platinum",
+      data: [5,5,7,10,11,11,16,27,27,60],
+      borderColor: "red",
+      fill: false
+    },{
+      label: "gold",
+      data: [29,38,59,86,109,212,337,217,168,0],
+      borderColor: "green",
+      fill: false
+    },{
+      label: "C",
+      data: [0,0,0,0,0,0,0,0,0,0],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: true}
+  }
+});
+
+</script>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 <!------------------------------------------------------------------------>
