@@ -373,6 +373,36 @@ new Chart("myChart3", {
 </script>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<script>
+const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+
+new Chart("myChart4", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "platinum",
+      data: [5,5,7,10,11,11,16,27,27,60],
+      borderColor: "red",
+      fill: false
+    },{
+      label: "gold",
+      data: [29,38,59,86,109,212,337,217,168,0],
+      borderColor: "green",
+      fill: false
+    },{
+      label: "C",
+      data: [0,0,0,0,0,0,0,0,0,0],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: true}
+  }
+});
+
+</script>
 
 
 <!------------------------------------------------------------------------>
