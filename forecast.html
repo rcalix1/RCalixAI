@@ -160,7 +160,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
 <p><em></em></p>
 
-      <canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+      <canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
 	
 <h3><a href="" name=""></a></h3>
 </div>
@@ -191,7 +191,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
 <p><em></em></p>
 
-      <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+      <canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
 	
 <h3><a href="" name=""></a></h3>
 </div>
@@ -237,6 +237,44 @@ new Chart("myChart", {
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+	<script>
+var xyValues = [
+  {x:2015, y:273},
+  {x:2016, y:570},
+  {x:2017, y:20000},
+  {x:2018, y:3854},
+  {x:2019, y:10324},
+  {x:2020, y:9600},
+  {x:2021, y:20000},
+  {x:2022, y:40000},
+  {x:2023, y:35000},
+  {x:2024, y:88000}
+];
+
+new Chart("myChart2", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      label: "Bitcoin Price History",
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues,
+      borderColor: "blue",
+    }]
+  },
+  options: {
+    legend: {display: true},
+    scales: {
+      xAxes: [{ticks: {min: 2000, max:2030}}],
+      yAxes: [{ticks: {min: 6, max:95000}}],
+    }
+  }
+});
+</script>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
 <script>
 const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
 
@@ -273,7 +311,7 @@ new Chart("myChart1", {
 <script>
 const xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
 
-new Chart("myChartBerkHath", {
+new Chart("myChart3", {
   type: "line",
   data: {
     labels: xValues,
