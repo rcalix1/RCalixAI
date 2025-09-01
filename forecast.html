@@ -239,6 +239,15 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </div>
 
 
+<div class="item">
+  <div class="pic"><p>S&P 500 Index (Year‑Start / Mid‑2025)</p></div>
+  <div class="txt">
+    <canvas id="myChart6" style="width:100%;max-width:700px"></canvas>
+  </div>
+</div>
+
+
+
 	
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	
@@ -439,6 +448,30 @@ new Chart("myChart5", {
   }
 });
 </script>
+
+
+<script>
+var xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+new Chart("myChart6", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "S&P 500 Index",
+      data: [2028.18,1918.60,2275.12,2789.80,3278.20,3793.75,4573.82,3960.66,4804.49,5979.52,6460.26],
+      borderColor: "orange",
+      fill: false
+    }]
+  },
+  options: {
+    legend: { display: true },
+    scales: {
+      yAxes:[{ ticks: { beginAtZero: false } }]
+    }
+  }
+});
+</script>
+
 
 
 <!------------------------------------------------------------------------>
