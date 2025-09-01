@@ -228,6 +228,18 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 <h3><a href="" name=""></a></h3>
 </div>
 </div>
+
+
+
+<div class="item">
+  <div class="pic"><p>10‑Year Treasury Yield (% Annualized)</p></div>
+  <div class="txt">
+    <canvas id="myChart5" style="width:100%;max-width:700px"></canvas>
+  </div>
+</div>
+
+
+	
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -404,6 +416,28 @@ new Chart("myChart4", {
   }
 });
 
+</script>
+
+<script>
+var xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+new Chart("myChart5", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "10‑Year Treasury Yield",
+      data: [1.88,2.09,2.43,2.58,2.71,1.76,1.08,1.76,3.53,4.06,4.63],
+      borderColor: "purple",
+      fill: false
+    }]
+  },
+  options: {
+    legend: { display: true },
+    scales: {
+      yAxes:[{ ticks: { callback: v => v + "%" } }]
+    }
+  }
+});
 </script>
 
 
