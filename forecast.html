@@ -263,7 +263,7 @@ new Chart("myChart0", {
     legend: {display: true},
     scales: {
       xAxes: [{ticks: {min: 2015, max:2026}}],
-      yAxes: [{ticks: {min: 6, max:360}}],
+      yAxes: [{ticks: {min: 6, max:400}}],
     }
   }
 });
@@ -301,7 +301,7 @@ new Chart("myChart1", {
     legend: {display: true},
     scales: {
       xAxes: [{ticks: {min: 2000, max:2030}}],
-      yAxes: [{ticks: {min: 6, max:120000}}],
+      yAxes: [{ticks: {min: 6, max:150000}}],
     }
   }
 });
@@ -311,7 +311,7 @@ new Chart("myChart1", {
 
 
 <script>
-var xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+var xValues = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
 
 new Chart("myChart2", {
   type: "line",
@@ -319,12 +319,12 @@ new Chart("myChart2", {
     labels: xValues,
     datasets: [{
       label: "NVidia Revenue",
-      data: [5,5,7,10,11,11,16,27,27,60],
+      data: [5,5,7,10,11,11,16,27,27,60, 120],
       borderColor: "red",
       fill: false
     },{
       label: "Global AI investment",
-      data: [29,38,59,86,109,212,337,217,168,0],
+      data: [29,38,59,86,109,212,337,217,168,0, 0],
       borderColor: "green",
       fill: false
     },{
