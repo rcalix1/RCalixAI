@@ -249,6 +249,13 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </div>
 
 
+<div class="item">
+  <div class="pic"><p>Silver</p></div>
+  <div class="txt">
+    <canvas id="myChart7silver" style="width:100%;max-width:700px"></canvas>
+  </div>
+</div>
+	
 
 	
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -462,6 +469,28 @@ new Chart("myChart6", {
     datasets: [{
       label: "S&P 500 Index",
       data: [2028.18,1918.60,2275.12,2789.80,3278.20,3793.75,4573.82,3960.66,4804.49,5979.52,6460.26],
+      borderColor: "orange",
+      fill: false
+    }]
+  },
+  options: {
+    legend: { display: true },
+    scales: {
+      yAxes:[{ ticks: { beginAtZero: false } }]
+    }
+  }
+});
+</script>
+
+<script>
+var xValues = [1977, 1980, 1982, 2003, 2011, 2015, 2024 2025];
+new Chart("myChart7silver", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "Silver",
+      data: [4.5, 35, 5.75, 4.5, 48, 14, 22, 80 ],
       borderColor: "orange",
       fill: false
     }]
